@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Srsly
+        psr4_prefix: Srsly
+        src_path: app
