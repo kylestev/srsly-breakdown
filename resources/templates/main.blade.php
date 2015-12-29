@@ -31,8 +31,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/4.0.4/highcharts.js"></script>
-  <script src="/js/app.js"></script>
-
   <script type="text/javascript">
     window.makeChart = function (continents) {
       var continentData = [],
@@ -94,5 +92,6 @@
       $('#piechartContainer').highcharts(config);
     };
   </script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
