@@ -18,8 +18,7 @@ class SummaryController extends Controller
     public function summary($year = 2015)
     {
         return view('main')
-            ->with('year', $year)
-            ->with('continents', get_summary($year));
+            ->with('year', $year);
     }
 
 }
