@@ -13,13 +13,21 @@
 <body>
 
   <div class="container" id="app">
-    <select v-model="year">
-      <option value="2015">2015</option>
-      <option value="2014">2014</option>
-    </select>
-    <br />
-
     <div id="piechartContainer" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-offset-sm-2 col-sm-4" for="report-year">
+          Year:
+        </label>
+        <div class="col-sm-4">
+          <select id="report-year" name="report-year" class="form-control" v-model="year">
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+          </select>
+        </div>
+      </div>
+    </form>
 
     <template v-for="(name, report) in countries">
       <continent-table :name="name" :countries="report.countries"></continent-table>
