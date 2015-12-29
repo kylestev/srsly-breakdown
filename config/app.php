@@ -114,7 +114,6 @@ return [
 		 * Application Service Providers...
 		 */
 		'Srsly\Providers\AppServiceProvider',
-		'Srsly\Providers\BusServiceProvider',
 		'Srsly\Providers\EventServiceProvider',
 		'Srsly\Providers\RouteServiceProvider',
 
@@ -129,7 +128,6 @@ return [
 		'Illuminate\Bus\BusServiceProvider',
 		'Illuminate\Cache\CacheServiceProvider',
 		'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
-		'Illuminate\Routing\ControllerServiceProvider',
 		'Illuminate\Cookie\CookieServiceProvider',
 		'Illuminate\Database\DatabaseServiceProvider',
 		'Illuminate\Encryption\EncryptionServiceProvider',
@@ -146,6 +144,7 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
+		'Illuminate\Broadcasting\BroadcastServiceProvider',
 
 	],
 
