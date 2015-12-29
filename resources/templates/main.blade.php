@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <title>"Srsly" VNC Server Breakdown</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   <style type="text/css">
     .table > tbody > tr:first-child > td:first-child {
       width: 68%;
@@ -40,10 +40,10 @@
 
   <!-- js -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/highcharts/4.0.4/highcharts.js"></script>
-  <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/4.0.4/highcharts.js"></script>
+  <script src="//code.highcharts.com/modules/drilldown.js"></script>
 
   <script type="text/javascript">
     $(function () {
