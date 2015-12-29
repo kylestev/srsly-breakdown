@@ -18,6 +18,20 @@ router.map({
   }
 });
 
+function fetchContinentData(year) {
+  var key = 'continents:' + year;
+  if (key in localStorage) {
+    return Promise.resolve(JSON.parse(localStorage[key]));
+  }
+
+  return Vue.http.get('/api/continents/' + year)
+    .then(function (response) {
+      var summary = response.data;
+      localStorage.setItem(key, JSON.stringify(summary));
+      return summary;
+    });
+}
+
 var App = Vue.extend({
 
   components: {
@@ -37,9 +51,10 @@ var App = Vue.extend({
     },
 
     year: function (val) {
-      this.$http.get('/api/continents/' + val)
-        .then(function (response) {
-          this.countries = response.data;
+      var vm = this;
+      fetchContinentData(val)
+        .then(function (summary) {
+          vm.countries = summary;
         });
       this.$route.router.go({ name: 'year', params: { year: val } });
     }
