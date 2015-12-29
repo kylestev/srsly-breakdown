@@ -14,7 +14,7 @@
 
   <div class="container" id="app">
     <select v-model="year">
-      <option value="2015" selected>2015</option>
+      <option value="2015">2015</option>
       <option value="2014">2014</option>
     </select>
     <br />
