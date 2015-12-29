@@ -11,14 +11,6 @@
 |
 */
 
-Route::get('/api/continents/{year?}', function ($year = 2015)
-{
-	return get_summary($year);
-});
+Route::get('/api/continents/{year?}', 'SummaryController@jsonSummary');
 
-Route::get('/{year?}', function ($year = 2015)
-{
-	return view('main')
-            ->with('year', $year)
-			->with('continents', get_summary($year));
-});
+Route::get('/{year?}', 'SummaryController@summary');
