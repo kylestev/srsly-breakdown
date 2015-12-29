@@ -117,9 +117,6 @@ return [
 		'Srsly\Providers\EventServiceProvider',
 		'Srsly\Providers\RouteServiceProvider',
 
-		// external includes
-		'Gidlov\Copycat\CopycatServiceProvider',
-
 		/*
 		 * Laravel Framework Service Providers...
 		 */
