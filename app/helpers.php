@@ -24,13 +24,13 @@ function get_details($reader, $ip)
 	});
 }
 
-function get_summary()
+function get_summary($year)
 {
-	return Cache::rememberForever('aggregate-summary', function ()
+	return Cache::rememberForever('aggregate-summary:' . $year, function () use ($year)
 	{
 		$details = [];
 
-		$servers = Server::all();
+		$servers = Server::where('year', $year)->get();
 		$reader = new Reader(storage_path() . '/maxmind.mmdb');
 
 		foreach ($servers as $server)

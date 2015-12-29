@@ -11,13 +11,14 @@
 |
 */
 
-Route::get('/api/continents', function ()
+Route::get('/api/continents/{year?}', function ($year = 2015)
 {
-	return get_summary();
+	return get_summary($year);
 });
 
-Route::get('/', function ()
+Route::get('/{year?}', function ($year = 2015)
 {
 	return view('main')
-			->with('continents', get_summary());
+            ->with('year', $year)
+			->with('continents', get_summary($year));
 });

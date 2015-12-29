@@ -48,7 +48,7 @@
   <script type="text/javascript">
     $(function () {
 
-      $.get('/api/continents', function (continents) {
+      $.get('/api/continents/{{ $year }}', function (continents) {
         var continentData = [],
           countries = {},
           drilldownSeries = [];
